@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --letters-gap: 1rem;
+  --max-width: 85rem;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress {
+  &__container {
+    //background-color: red;
+    display: grid;
+    grid-template-columns: repeat(5, 5rem);
+    grid-template-rows: 5rem;
+    margin-top: 5rem;
+    column-gap: 7rem;
+  }
+
+  &__level {
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+.letters {
+  &__container {
+    background-color: #eee;
+    max-width: var(--max-width);
+    //width: 60%;
+    margin-top: 3rem;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, calc((100% - (var(--letters-gap) * 11)) / 13 - 0.1rem)));
+    justify-content: center;
+    gap: var(--letters-gap);
+    border-radius: 1rem;
+  }
+
+  &__button {
+    background-color: #333;
+    color: #eee;
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    &:active {
+      outline: solid 1px #333;
+    }
+
+    &--clicked {
+      background-color: #fff;
+      color: #333;
+      outline: solid 1px #333;
+    }
+  }
+}
+
+.category {
+  background-color: #333;
+  color: #eee;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  padding: .75rem 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
+}
+
+.answers {
+  &__container {
+    max-width: var(--max-width);
+    margin-top: 2rem;
+    display: flex;
+    row-gap: 1rem;
+    column-gap: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    //outline-offset: 4rem;
+    //border-radius: 1px;
+    //outline: solid 1px #333;
+    // background-color: #eee;
+  }
+
+  &__word {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__socket {
+    color: #333;
+    background-image: linear-gradient(to top left, rgba(238, 238, 238, 0.3), white);
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2) inset, -2px -2px 1px white inset;
+
+    &--filled {
+      background-color: #333;
+      background-image: none;
+      color: #eee;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.lives {
+  position: absolute;
+  align-items: stretch;
+  justify-content: space-between;
+  right: 3rem;
+  top: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__box {
+    background-image: linear-gradient(to top left, rgba(175, 175, 175, 0.3), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2) inset, -2px -2px 1px white inset;
+
+    &--filled {
+      background-image: none;
+      background-color: #b3261e;
+      box-shadow: 0 0 2rem #b3261e;
+
+      & > * {
+        -webkit-text-stroke: 1px yellow !important;
+      }
+    }
+
+    & > * {
+      font-size: 4rem;
+      line-height: 3rem;
+      color: transparent;
+      -webkit-text-stroke: 1px #bbb;
+      font-weight: 700;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #eee;
+  padding: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.message {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.restart {
+  background-color: #333;
+  color: #eee;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #fff;
+    color: #333;
+  }
+
+  &:active {
+    outline: solid 1px #333;
+  }
+}
+
+.hidden {
+  display: none;
+}
