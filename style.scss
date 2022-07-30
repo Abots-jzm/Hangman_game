@@ -3,6 +3,8 @@
 :root {
   --letters-gap: 1rem;
   --max-width: 85rem;
+  --progress-color: #ccc;
+  --progress-width: 0;
 }
 
 *,
@@ -34,16 +36,39 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 5rem);
     grid-template-rows: 5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     column-gap: 7rem;
   }
 
   &__level {
     border-radius: 50%;
-    border: 2px solid #333;
+    border: 2px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 7.25rem;
+      height: 3px;
+      background-color: var(--progress-color);
+      left: 4.75rem;
+      transition: width .3s ease-in;
+    }
+
+    &:after {
+      background-color: green;
+      width: var(--progress-width);
+      z-index: 5;
+    }
+
+    &--active {
+      border: 2px solid green;
+      color: green;
+    }
   }
 
 
@@ -168,6 +193,7 @@ body {
     border-radius: 1rem;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2) inset, -2px -2px 1px white inset;
+    transition: background-color 1s, box-shadow 1s;
 
     &--filled {
       background-image: none;
@@ -185,6 +211,7 @@ body {
       color: transparent;
       -webkit-text-stroke: 1px #bbb;
       font-weight: 700;
+      transition: all 1s;
     }
   }
 }

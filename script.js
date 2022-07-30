@@ -16,8 +16,16 @@ const dat4 = {
   category: "Phrase",
   answer: "If it ain't broke, don't fix it",
 };
+const dat5 = {
+  category: "Phrase",
+  answer: "Early to bed, early to rise",
+};
 
-const data = [dat1, dat2, dat3, dat4];
+const dat6 = {
+  category: "abcd",
+  answer: "abcd",
+};
+const data = [dat1, dat2, dat3, dat4, dat5, dat6];
 
 const category = document.querySelector(".category");
 const answers = document.querySelector(".answers__container");
@@ -27,20 +35,23 @@ const gameOverMessage = document.querySelector(".message");
 const restartBtn = document.querySelector(".restart");
 const livesBoxes = document.querySelectorAll(".lives__box");
 const lettersContainer = document.querySelector(".letters__container");
+const progressNumbers = document.querySelectorAll(".progress__level");
 
 const allAlphabets = "abcdefghijklmnopqrstuvwxyz".split("");
+const numberOfLevels = 5;
 
 let lives = 4;
+let currentLevel = 1;
 let chosenLetters = [];
 let lettersSet;
 let wordsArr;
 let currentAnswer;
-let activeData = data;
+let activeData = [...data];
 let currentDataIndex;
 let currentData;
 
 function setCurrentData() {
-  currentDataIndex = Math.floor(Math.random() * data.length);
+  currentDataIndex = Math.floor(Math.random() * activeData.length);
   currentData = activeData[currentDataIndex];
 }
 
@@ -90,8 +101,8 @@ function updateUI(letter) {
   });
 }
 
-function gameOver() {
-  gameOverMessage.textContent = "You Lost!";
+function endGame(message) {
+  gameOverMessage.textContent = message;
   overlay.classList.remove("hidden");
 }
 
@@ -121,10 +132,35 @@ function removeLive() {
   elementOfInterest.classList.add("lives__box--filled");
   lives--;
 
-  if (lives <= 0) gameOver();
+  if (lives <= 0) endGame("You Lost!");
+}
+
+function initializeProgressBars() {
+  progressNumbers.forEach(number => {
+    if (+number.textContent === 5)
+      number.style.setProperty("--progress-color", "transparent");
+  });
+}
+
+function updateProgressBars() {
+  currentLevel++;
+
+  progressNumbers.forEach(number => {
+    if (currentLevel === +number.textContent)
+      setTimeout(() => number.classList.add("progress__level--active"), 300);
+
+    if (currentLevel > numberOfLevels) {
+      endGame("You Won!");
+      return;
+    }
+
+    if (currentLevel > +number.textContent)
+      number.style.setProperty("--progress-width", "7.25rem");
+  });
 }
 
 function nextLevel() {
+  updateProgressBars();
   activeData.splice(currentDataIndex, 1);
   reset();
 }
@@ -137,6 +173,21 @@ function checkForAnswer(letter) {
   if (lettersSet.size === 0) nextLevel();
 }
 
+function restartGame(e) {
+  e.preventDefault();
+  overlay.classList.add("hidden");
+  currentLevel = 1;
+  progressNumbers.forEach(number => {
+    if (+number.textContent !== 1)
+      number.classList.remove("progress__level--active");
+
+    if (+number.textContent !== 5)
+      number.style.setProperty("--progress-width", "0");
+  });
+  activeData = [...data];
+  reset();
+}
+
 //EVENT LISTENERS
 lettersContainer.addEventListener("click", (e) => {
   if (!e.target.classList.contains("letters__button")) return;
@@ -146,9 +197,7 @@ lettersContainer.addEventListener("click", (e) => {
 });
 
 restartBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  reset();
-  overlay.classList.add("hidden");
+  restartGame(e);
 });
 
 document.addEventListener("keydown", (e) => {
@@ -163,6 +212,10 @@ document.addEventListener("keydown", (e) => {
   checkForAnswer(letter);
 });
 
-//Start
-setCurrentData();
-displayInitializeData(currentData);
+function init() {
+  setCurrentData();
+  displayInitializeData(currentData);
+  initializeProgressBars();
+}
+
+init();
