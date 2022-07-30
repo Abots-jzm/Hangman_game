@@ -1,0 +1,28 @@
+{
+  "dataObj": {
+    "1": {
+      "category": "Popular book",
+      "answer": "The Hound of Baskerville"
+    },
+    "2": {
+      "category": "Popular movie",
+      "answer": "Avengers infinity war"
+    },
+    "3": {
+      "category": "Popular movie",
+      "answer": "Avengers endgame"
+    },
+    "4": {
+      "category": "Phrase",
+      "answer": "If it ain't broke, don't fix it"
+    },
+    "5": {
+      "category": "Phrase",
+      "answer": "Early to bed, early to rise"
+    },
+    "6": {
+      "category": "TV Show",
+      "answer": "Stranger Things"
+    }
+  }
+}

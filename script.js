@@ -1,31 +1,7 @@
-"use strict";
+import Dat from "./data.json" assert {type: "json"};
 
-const dat1 = {
-  category: "Popular book",
-  answer: "The Hound of Baskerville",
-};
-const dat2 = {
-  category: "Popular movie",
-  answer: "Avengers infinity war",
-};
-const dat3 = {
-  category: "Popular movie",
-  answer: "Avengers endgame",
-};
-const dat4 = {
-  category: "Phrase",
-  answer: "If it ain't broke, don't fix it",
-};
-const dat5 = {
-  category: "Phrase",
-  answer: "Early to bed, early to rise",
-};
-
-const dat6 = {
-  category: "abcd",
-  answer: "abcd",
-};
-const data = [dat1, dat2, dat3, dat4, dat5, dat6];
+const {dataObj} = Dat;
+const data = Object.values(dataObj);
 
 const category = document.querySelector(".category");
 const answers = document.querySelector(".answers__container");
