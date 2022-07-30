@@ -164,5 +164,5 @@ document.addEventListener("keydown", (e) => {
 });
 
 //Start
-// setCurrentData();
-// displayInitializeData(currentData);
+setCurrentData();
+displayInitializeData(currentData);
