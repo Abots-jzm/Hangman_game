@@ -26,6 +26,8 @@ let activeData = [...data];
 let currentDataIndex;
 let currentData;
 
+//todo: Small screen support, more Data, animations
+
 function setCurrentData() {
   currentDataIndex = Math.floor(Math.random() * activeData.length);
   currentData = activeData[currentDataIndex];

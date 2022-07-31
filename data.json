@@ -14,7 +14,7 @@
     },
     "4": {
       "category": "Phrase",
-      "answer": "If it ain't broke, don't fix it"
+      "answer": "If it ain't broke , don't fix it"
     },
     "5": {
       "category": "Phrase",
@@ -24,5 +24,9 @@
       "category": "TV Show",
       "answer": "Stranger Things"
     }
+  },
+  "insultsObj": {
+    "1": "Why do I always get stuck with the idiots",
+    "2": "Now we know you made up the entire education section of your CV"
   }
 }
