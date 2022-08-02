@@ -12,6 +12,7 @@ const restartBtn = document.querySelector(".restart");
 const livesBoxes = document.querySelectorAll(".lives__box");
 const lettersContainer = document.querySelector(".letters__container");
 const progressNumbers = document.querySelectorAll(".progress__level");
+const keyboardBtn = document.querySelector(".use-keyboard");
 
 const allAlphabets = "abcdefghijklmnopqrstuvwxyz".split("");
 const numberOfLevels = 5;
@@ -171,6 +172,11 @@ lettersContainer.addEventListener("click", (e) => {
 
 restartBtn.addEventListener("click", (e) => {
   restartGame(e);
+});
+
+keyboardBtn.addEventListener("click", function () {
+  keyboardBtn.classList.add("hidden");
+  lettersContainer.classList.add("hidden");
 });
 
 document.addEventListener("keydown", (e) => {

@@ -173,7 +173,10 @@ main {
 
 .box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
   overflow-x: auto;
   width: min(var(--max-width), 95vw);
 }
@@ -380,8 +383,22 @@ main {
   outline: solid 1px #333;
 }
 
+.use-keyboard {
+  background-color: #333;
+  color: #333;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.use-keyboard::placeholder {
+  color: #eee;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
