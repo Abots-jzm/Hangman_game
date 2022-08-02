@@ -165,7 +165,6 @@ function restartGame(e) {
 lettersContainer.addEventListener("click", (e) => {
   if (!e.target.classList.contains("letters__button")) return;
 
-  e.target.blur();
   e.target.classList.add("letters__button--clicked");
   checkForAnswer(e.target.textContent);
 });

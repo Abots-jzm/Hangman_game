@@ -241,9 +241,9 @@ main {
   outline: solid 1px #333;
 }
 .letters__button--clicked {
-  background-color: #fff;
-  color: #333;
-  outline: solid 1px #333;
+  background-color: #fff !important;
+  color: #333 !important;
+  outline: solid 1px #333 !important;
 }
 
 .category {
