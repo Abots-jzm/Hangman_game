@@ -240,6 +240,11 @@ main {
       &__button {
         font-size: 1.5rem;
         border-radius: .7rem;
+
+        &:hover {
+          background-color: #333;
+          color: #eee;
+        }
       }
     }
   }
@@ -273,10 +278,8 @@ main {
     transition: all 0.2s;
 
     &:hover {
-      @media (hover: hover) {
-        background-color: #fff;
-        color: #333;
-      }
+      background-color: #fff;
+      color: #333;
     }
 
     &:active {

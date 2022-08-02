@@ -203,6 +203,10 @@ main {
     font-size: 1.5rem;
     border-radius: 0.7rem;
   }
+  .box .letters__button:hover {
+    background-color: #333;
+    color: #eee;
+  }
 }
 
 .letters__container {
@@ -229,11 +233,9 @@ main {
   cursor: pointer;
   transition: all 0.2s;
 }
-@media (hover: hover) {
-  .letters__button:hover {
-    background-color: #fff;
-    color: #333;
-  }
+.letters__button:hover {
+  background-color: #fff;
+  color: #333;
 }
 .letters__button:active {
   outline: solid 1px #333;
