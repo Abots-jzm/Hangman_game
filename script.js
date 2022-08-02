@@ -175,7 +175,6 @@ restartBtn.addEventListener("click", (e) => {
 });
 
 keyboardBtn.addEventListener("click", function () {
-  keyboardBtn.classList.add("hidden");
   lettersContainer.classList.add("hidden");
 });
 

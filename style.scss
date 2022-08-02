@@ -440,9 +440,14 @@ main {
   font-size: 1.5rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
+  display: none;
   cursor: pointer;
 
-  &::placeholder {
+  @media only screen and (max-width: 37.5em) {
+    display: block;
+  }
+
+    &::placeholder {
     color: #eee;
     text-align: center;
     text-transform: capitalize;
