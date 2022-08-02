@@ -10,97 +10,99 @@
   <title>Hangaroo | clone</title>
 </head>
 <body>
-<div class="top">
-  <div class="progress__container">
-    <div class="progress__level progress__level--active">1</div>
-    <div class="progress__level">2</div>
-    <div class="progress__level">3</div>
-    <div class="progress__level">4</div>
-    <div class="progress__level">5</div>
+<main>
+  <div class="top">
+    <div class="progress__container">
+      <div class="progress__level progress__level--active">1</div>
+      <div class="progress__level">2</div>
+      <div class="progress__level">3</div>
+      <div class="progress__level">4</div>
+      <div class="progress__level" id="last">5</div>
+    </div>
+    <div class="lives">
+      <div class="lives__box">
+        <div>X</div>
+      </div>
+      <div class="lives__box">
+        <div>X</div>
+      </div>
+      <div class="lives__box">
+        <div>X</div>
+      </div>
+      <div class="lives__box">
+        <div>X</div>
+      </div>
+    </div>
   </div>
-  <div class="lives">
-    <div class="lives__box">
-      <div>X</div>
-    </div>
-    <div class="lives__box">
-      <div>X</div>
-    </div>
-    <div class="lives__box">
-      <div>X</div>
-    </div>
-    <div class="lives__box">
-      <div>X</div>
-    </div>
-  </div>
-</div>
 
-<div class="overlay hidden">
-  <div class="modal">
-    <p class="message">You won!</p>
-    <button class="restart">PLAY AGAIN</button>
+  <div class="overlay hidden">
+    <div class="modal">
+      <p class="message">You won!</p>
+      <button class="restart">PLAY AGAIN</button>
+    </div>
   </div>
-</div>
-<div class="box">
-  <div class="letters__container">
-    <div class="letters__button">a</div>
-    <div class="letters__button">b</div>
-    <div class="letters__button">c</div>
-    <div class="letters__button">d</div>
-    <div class="letters__button">e</div>
-    <div class="letters__button">f</div>
-    <div class="letters__button">g</div>
-    <div class="letters__button">h</div>
-    <div class="letters__button">i</div>
-    <div class="letters__button">j</div>
-    <div class="letters__button">k</div>
-    <div class="letters__button">l</div>
-    <div class="letters__button">m</div>
-    <div class="letters__button">n</div>
-    <div class="letters__button">o</div>
-    <div class="letters__button">p</div>
-    <div class="letters__button">q</div>
-    <div class="letters__button">r</div>
-    <div class="letters__button">s</div>
-    <div class="letters__button">t</div>
-    <div class="letters__button">u</div>
-    <div class="letters__button">v</div>
-    <div class="letters__button">w</div>
-    <div class="letters__button">x</div>
-    <div class="letters__button">y</div>
-    <div class="letters__button">z</div>
+  <div class="box">
+    <div class="letters__container">
+      <div class="letters__button">a</div>
+      <div class="letters__button">b</div>
+      <div class="letters__button">c</div>
+      <div class="letters__button">d</div>
+      <div class="letters__button">e</div>
+      <div class="letters__button">f</div>
+      <div class="letters__button">g</div>
+      <div class="letters__button">h</div>
+      <div class="letters__button">i</div>
+      <div class="letters__button">j</div>
+      <div class="letters__button">k</div>
+      <div class="letters__button">l</div>
+      <div class="letters__button">m</div>
+      <div class="letters__button">n</div>
+      <div class="letters__button">o</div>
+      <div class="letters__button">p</div>
+      <div class="letters__button">q</div>
+      <div class="letters__button">r</div>
+      <div class="letters__button">s</div>
+      <div class="letters__button">t</div>
+      <div class="letters__button">u</div>
+      <div class="letters__button">v</div>
+      <div class="letters__button">w</div>
+      <div class="letters__button">x</div>
+      <div class="letters__button">y</div>
+      <div class="letters__button">z</div>
+    </div>
   </div>
-</div>
-<div class="category">Popular book</div>
-<div class="answers__container">
-  <!-- <div class="answers__word">
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
+  <div class="category">Popular book</div>
+  <div class="answers__container">
+    <!-- <div class="answers__word">
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+    </div>
+    <div class="answers__word">
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+    </div>
+    <div class="answers__word">
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+    </div>
+    <div class="answers__word">
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+      <div class="answers__socket"></div>
+    </div> -->
   </div>
-  <div class="answers__word">
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-  </div>
-  <div class="answers__word">
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-  </div>
-  <div class="answers__word">
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-    <div class="answers__socket"></div>
-  </div> -->
-</div>
+</main>
 </body>
 </html>

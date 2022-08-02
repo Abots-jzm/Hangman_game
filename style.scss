@@ -25,8 +25,11 @@ body {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
+}
+
+main {
+  display: grid;
+  justify-items: center;
   align-items: center;
 }
 
@@ -145,6 +148,15 @@ body {
   }
 }
 
+#last {
+  &:before,
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+}
+
 .progress {
   &__container {
     //background-color: red;
@@ -181,6 +193,10 @@ body {
     }
 
     &--active {
+      border: 2px solid #d5d50d;
+    }
+
+    &--done {
       border: 2px solid #2aaa8a;
       color: #2aaa8a;
     }
@@ -189,22 +205,54 @@ body {
 
 .box {
   display: flex;
-  flex: 1;
   justify-content: center;
-  width: 95%;
   overflow-x: auto;
+  width: min(var(--max-width), 95vw);
+
+  @media only screen and (max-width: 56.25em) {
+    .letters {
+      &__container {
+        grid-template-columns: repeat(13, 4rem);
+        grid-template-rows: repeat(2, 4rem);
+        padding: 2rem 1rem;
+      }
+
+      &__button {
+        font-size: 2rem;
+        gap: .5rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-row: 4;
+    overflow-x: visible;
+
+    .letters {
+      &__container {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, 4rem);
+        grid-template-rows: none;
+        grid-auto-rows: 4rem;
+      }
+
+      &__button {
+        font-size: 1.5rem;
+        border-radius: .7rem;
+      }
+    }
+  }
 }
 
 .letters {
   &__container {
     background-color: #eee;
     max-width: var(--max-width);
-    //width: 60%;
     margin-top: 3rem;
     padding: 3rem 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(4rem, calc((100% - (var(--letters-gap) * 11)) / 13 - 0.1rem)));
-    //grid-template-columns: repeat(auto-fit, 5rem);
+    grid-template-columns: repeat(13, 5rem);
+    grid-template-rows: repeat(2, 5rem);
     justify-content: center;
     gap: var(--letters-gap);
     border-radius: 1rem;
@@ -214,7 +262,6 @@ body {
     background-color: #333;
     color: #eee;
     font-size: 3rem;
-    padding: 0.5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,6 +298,11 @@ body {
   text-transform: capitalize;
   position: relative;
   z-index: 2;
+
+  @media only screen and (max-width: 56.25em) {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
 .answers {
@@ -262,15 +314,23 @@ body {
     column-gap: 8rem;
     flex-wrap: wrap;
     justify-content: center;
-    //outline-offset: 4rem;
-    //border-radius: 1px;
-    //outline: solid 1px #333;
-    // background-color: #eee;
+
+    @media only screen and (max-width: 56.25em) {
+      row-gap: 1rem;
+      column-gap: 5rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      column-gap: 3rem;
+    }
   }
 
   &__word {
     display: flex;
     gap: 1rem;
+    @media only screen and (max-width: 37.5em) {
+      gap: .5rem;
+    }
   }
 
   &__socket {
@@ -286,6 +346,21 @@ body {
     text-transform: uppercase;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2) inset, -2px -2px 1px white inset;
+
+
+    @media only screen and (max-width: 56.25em) {
+      font-size: 2.5rem;
+      height: 5rem;
+      width: 5rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 1.5rem;
+      height: 3rem;
+      width: 3rem;
+      border-radius: .6rem;
+    }
+
 
     &--filled {
       background-color: #333;

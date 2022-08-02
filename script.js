@@ -113,19 +113,14 @@ function removeLive() {
   if (lives <= 0) endGame("You Lost!");
 }
 
-function initializeProgressBars() {
-  progressNumbers.forEach(number => {
-    if (+number.textContent === 5)
-      number.style.setProperty("--progress-color", "transparent");
-  });
-}
-
 function updateProgressBars() {
   currentLevel++;
 
   progressNumbers.forEach(number => {
     if (currentLevel === +number.textContent)
       setTimeout(() => number.classList.add("progress__level--active"), 300);
+    if (currentLevel > +number.textContent)
+      number.classList.add("progress__level--done");
 
     if (currentLevel > numberOfLevels) {
       endGame("You Won!");
@@ -193,7 +188,6 @@ document.addEventListener("keydown", (e) => {
 function init() {
   setCurrentData();
   displayInitializeData(currentData);
-  initializeProgressBars();
 }
 
 init();
