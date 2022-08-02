@@ -92,9 +92,10 @@ main {
     }
 
     .lives {
-      height: 4rem;
+      height: 3.5rem;
 
       &__box {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, -1px -1px 1px white inset;
         padding: 1rem;
 
         & > * {
@@ -272,8 +273,10 @@ main {
     transition: all 0.2s;
 
     &:hover {
-      background-color: #fff;
-      color: #333;
+      @media (hover: hover) {
+        background-color: #fff;
+        color: #333;
+      }
     }
 
     &:active {
@@ -359,6 +362,7 @@ main {
       height: 3rem;
       width: 3rem;
       border-radius: .6rem;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, -1px -1px 1px white inset;
     }
 
 

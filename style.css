@@ -78,9 +78,10 @@ main {
     display: none;
   }
   .top .lives {
-    height: 4rem;
+    height: 3.5rem;
   }
   .top .lives__box {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, -1px -1px 1px white inset;
     padding: 1rem;
   }
   .top .lives__box > * {
@@ -228,9 +229,11 @@ main {
   cursor: pointer;
   transition: all 0.2s;
 }
-.letters__button:hover {
-  background-color: #fff;
-  color: #333;
+@media (hover: hover) {
+  .letters__button:hover {
+    background-color: #fff;
+    color: #333;
+  }
 }
 .letters__button:active {
   outline: solid 1px #333;
@@ -315,6 +318,7 @@ main {
     height: 3rem;
     width: 3rem;
     border-radius: 0.6rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, -1px -1px 1px white inset;
   }
 }
 .answers__socket--filled {
