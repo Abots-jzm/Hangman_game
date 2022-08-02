@@ -173,7 +173,6 @@ main {
 
 .box {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -381,26 +380,6 @@ main {
 }
 .restart:active {
   outline: solid 1px #333;
-}
-
-.use-keyboard {
-  background-color: #333;
-  color: #333;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  display: none;
-  cursor: pointer;
-}
-@media only screen and (max-width: 37.5em) {
-  .use-keyboard {
-    display: block;
-  }
-}
-.use-keyboard::placeholder {
-  color: #eee;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 .hidden {
