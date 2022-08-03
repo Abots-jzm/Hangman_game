@@ -16,6 +16,7 @@ const progressNumbers = document.querySelectorAll(".progress__level");
 const allAlphabets = "abcdefghijklmnopqrstuvwxyz".split("");
 const numberOfLevels = 5;
 
+let gameOver = false;
 let lives = 4;
 let currentLevel = 1;
 let chosenLetters = [];
@@ -26,7 +27,7 @@ let activeData = [...data];
 let currentDataIndex;
 let currentData;
 
-//todo: Small screen support, more Data, animations
+//todo: more Data, animations
 
 function setCurrentData() {
   currentDataIndex = Math.floor(Math.random() * activeData.length);
@@ -50,8 +51,7 @@ function displayInitializeData(data) {
       innerHtmlText += `<div class="answers__socket"></div>`;
     });
 
-    htmlText = `
-    <div class="answers__word">${innerHtmlText}</div>`;
+    htmlText = `<div class="answers__word">${innerHtmlText}</div>`;
     answers.insertAdjacentHTML("beforeend", htmlText);
   });
   handleSpecialCharacters();
@@ -63,7 +63,7 @@ function handleSpecialCharacters() {
   });
 }
 
-function updateUI(letter) {
+function updateUI(letter, duration = 0) {
   lettersSet.delete(letter);
   wordsArr.forEach((word, i) => {
     if (word.toLowerCase().includes(letter))
@@ -72,6 +72,10 @@ function updateUI(letter) {
           const elementOfInterest = document.querySelector(
             `.answers__container :nth-child(${i + 1}) :nth-child(${li + 1})`,
           );
+
+          if (duration)
+            elementOfInterest.style.transition = `all ${duration}s`;
+
           elementOfInterest.textContent = letter;
           elementOfInterest.classList.add("answers__socket--filled");
         }
@@ -87,7 +91,7 @@ function endGame(message) {
 function reset() {
   lives = 4;
   chosenLetters = [];
-  lettersSet = null;
+  lettersSet = false;
   wordsArr = null;
   currentAnswer = null;
 
@@ -103,6 +107,19 @@ function reset() {
   displayInitializeData(currentData);
 }
 
+function showRemainingLetters() {
+  lettersSet.forEach((letter) => {
+    updateUI(letter, 2);
+  });
+}
+
+function showLostUI() {
+  const sockets = answers.querySelectorAll(".answers__socket");
+  sockets.forEach(socket => socket.classList.add("answers__socket--failed"));
+  showRemainingLetters();
+  setTimeout(() => sockets.forEach(socket => socket.classList.remove("answers__socket--failed")), 2000);
+}
+
 function removeLive() {
   const elementOfInterest = document.querySelector(
     `.lives :nth-child(${Math.abs(lives - 5)})`,
@@ -110,7 +127,13 @@ function removeLive() {
   elementOfInterest.classList.add("lives__box--filled");
   lives--;
 
-  if (lives <= 0) endGame("You Lost!");
+  if (lives <= 0) {
+    gameOver = true;
+    showLostUI();
+    setTimeout(() => {
+      endGame("You Lost!");
+    }, 3000);
+  }
 }
 
 function updateProgressBars() {
@@ -143,13 +166,23 @@ function checkForAnswer(letter) {
   else if (!chosenLetters.includes(letter)) removeLive();
 
   chosenLetters.push(letter);
-  if (lettersSet.size === 0) nextLevel();
+  if (lettersSet.size === 0 && !gameOver) {
+    showPassedUI();
+    setTimeout(nextLevel, 500);
+  }
+}
+
+function showPassedUI() {
+  const sockets = answers.querySelectorAll(".answers__socket");
+  sockets.forEach(socket => socket.classList.add("answers__socket--passed"));
+  setTimeout(() => sockets.forEach(socket => socket.classList.remove("answers__socket--passed")), 250);
 }
 
 function restartGame(e) {
   e.preventDefault();
   overlay.classList.add("hidden");
   currentLevel = 1;
+  gameOver = false;
   progressNumbers.forEach(number => {
     if (+number.textContent !== 1)
       number.classList.remove("progress__level--active");

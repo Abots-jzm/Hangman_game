@@ -308,6 +308,13 @@ main {
   text-transform: uppercase;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2) inset, -2px -2px 1px white inset;
+  transition: all 0.25s;
+}
+.answers__socket--passed {
+  border: 3px solid #2aaa8a;
+}
+.answers__socket--failed {
+  border: 3px solid #b3261e;
 }
 @media only screen and (max-width: 56.25em) {
   .answers__socket {
