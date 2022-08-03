@@ -117,7 +117,7 @@ function showLostUI() {
   const sockets = answers.querySelectorAll(".answers__socket");
   sockets.forEach(socket => socket.classList.add("answers__socket--failed"));
   showRemainingLetters();
-  setTimeout(() => sockets.forEach(socket => socket.classList.remove("answers__socket--failed")), 2000);
+  setTimeout(() => sockets.forEach(socket => socket.classList.remove("answers__socket--failed")), 4000);
 }
 
 function removeLive() {
@@ -132,7 +132,7 @@ function removeLive() {
     showLostUI();
     setTimeout(() => {
       endGame("You Lost!");
-    }, 3000);
+    }, 4000);
   }
 }
 
@@ -187,8 +187,8 @@ function restartGame(e) {
     if (+number.textContent !== 1)
       number.classList.remove("progress__level--active");
 
-    if (+number.textContent !== 5)
-      number.style.setProperty("--progress-width", "0");
+    number.classList.remove("progress__level--done");
+    number.style.setProperty("--progress-width", "0");
   });
   activeData = [...data];
   reset();
