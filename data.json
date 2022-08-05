@@ -6,7 +6,7 @@
     },
     "2": {
       "category": "Movie/TV Show",
-      "answer": "The avengers"
+      "answer": "Avengers infinity war"
     },
     "3": {
       "category": "Movie/TV Show",
@@ -26,7 +26,7 @@
     },
     "7": {
       "category": "Movie/TV Show",
-      "answer": "How to get away with murder"
+      "answer": "Judge of the jungle"
     },
     "8": {
       "category": "Movie/TV Show",
@@ -38,7 +38,7 @@
     },
     "10": {
       "category": "Movie/TV Show",
-      "answer": "Passengers"
+      "answer": "Dawn of the planet of apes"
     },
     "11": {
       "category": "Movie/TV Show",
@@ -50,7 +50,7 @@
     },
     "13": {
       "category": "Movie/TV Show",
-      "answer": "Tomb raider"
+      "answer": "Penguins of madagascar"
     },
     "14": {
       "category": "Movie/TV Show",
@@ -78,7 +78,7 @@
     },
     "20": {
       "category": "Movie/TV Show",
-      "answer": "Kissing booth"
+      "answer": "All American"
     },
     "21": {
       "category": "Movie/TV Show",
@@ -102,23 +102,23 @@
     },
     "26": {
       "category": "Movie/TV Show",
-      "answer": "Pitch perfect"
+      "answer": "Cloudy with a chance of meatballs"
     },
     "27": {
       "category": "Movie/TV Show",
-      "answer": "Home alone"
+      "answer": "All of us are dead"
     },
     "28": {
       "category": "Movie/TV Show",
-      "answer": "here"
+      "answer": "Pirates of the caribbean"
     },
     "29": {
       "category": "Movie/TV Show",
-      "answer": "Motherless Brooklyn"
+      "answer": "Law abiding citizen"
     },
     "30": {
       "category": "Movie/TV Show",
-      "answer": "Motherless Brooklyn"
+      "answer": "Orange is the new black"
     },
     "31": {
       "category": "Movie/TV Show",
@@ -162,7 +162,7 @@
     },
     "41": {
       "category": "Movie/TV Show",
-      "answer": "The Matrix: Reloaded"
+      "answer": "The Matrix : Reloaded"
     },
     "42": {
       "category": "Popular Phrase",
@@ -182,7 +182,7 @@
     },
     "46": {
       "category": "Popular Phrase",
-      "answer": "A bird in the hand it worth two in the bush"
+      "answer": "A bird in the hand is worth two in the bush"
     },
     "47": {
       "category": "Popular Phrase",
@@ -214,7 +214,7 @@
     },
     "54": {
       "category": "Popular Phrase",
-      "answer": "Slow and steady win the race"
+      "answer": "Slow and steady wins the race"
     },
     "55": {
       "category": "Popular Phrase",
@@ -234,11 +234,11 @@
     },
     "59": {
       "category": "Popular Phrase",
-      "answer": "Hasta la vista, baby!"
+      "answer": "Hasta la vista , baby!"
     },
     "60": {
       "category": "Popular Phrase",
-      "answer": "Keep your friends close, but your enemies closer"
+      "answer": "Keep your friends close , but your enemies closer"
     },
     "61": {
       "category": "Popular Phrase",
@@ -258,11 +258,71 @@
     },
     "65": {
       "category": "Popular Phrase",
-      "answer": "For What is dead my never die"
+      "answer": "For What is dead may never die"
     },
     "66": {
       "category": "Popular Phrase",
       "answer": "Fool me once , shame on you"
+    },
+    "67": {
+      "category": "Popular Phrase",
+      "answer": "Absolute power corrupts absolutely"
+    },
+    "68": {
+      "category": "Movie/TV Show",
+      "answer": "Shawshank redemption"
+    },
+    "69": {
+      "category": "Movie/TV Show",
+      "answer": "Squid game"
+    },
+    "70": {
+      "category": "Movie/TV Show",
+      "answer": "Guardians of the galaxy"
+    },
+    "71": {
+      "category": "Movie/TV Show",
+      "answer": "Rick and morty"
+    },
+    "72": {
+      "category": "Movie/TV Show",
+      "answer": "Everybody hates chris"
+    },
+    "73": {
+      "category": "Movie/TV Show",
+      "answer": "To all the boys I've ever loved"
+    },
+    "74": {
+      "category": "Movie/TV Show",
+      "answer": "The dark knight"
+    },
+    "75": {
+      "category": "Popular Phrase",
+      "answer": "I came, I say, I conquered"
+    },
+    "76": {
+      "category": "Popular Phrase",
+      "answer": "You can't eat your cake and still have it"
+    },
+    "77": {
+      "category": "Popular Phrase",
+      "answer": "As you lay your bed, so you lie on it"
+    },
+    "78": {
+      "category": "Popular Phrase",
+      "answer": "Pride goes before a fall"
+    },
+    "79": {
+      "category": "Popular Phrase",
+      "answer": "He who laughs last , laughs best"
+    },
+    "80": {
+      "category": "Popular Phrase",
+      "answer": "Even a broken clock is right twice a day"
+    },
+    "81": {
+      "category": "Popular Phrase",
+      "answer": "It's morbin time"
     }
   }
 }
