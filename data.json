@@ -1,34 +1,268 @@
 {
   "dataObj": {
     "1": {
-      "category": "Popular book",
-      "answer": "The Hound of Baskerville"
+      "category": "Movie/TV Show",
+      "answer": "The Big bang theory"
     },
     "2": {
-      "category": "Popular movie",
-      "answer": "Avengers infinity war"
+      "category": "Movie/TV Show",
+      "answer": "The avengers"
     },
     "3": {
-      "category": "Popular movie",
-      "answer": "Avengers endgame"
+      "category": "Movie/TV Show",
+      "answer": "The twilight saga : Breaking dawn"
     },
     "4": {
-      "category": "Phrase",
-      "answer": "If it ain't broke , don't fix it"
+      "category": "Movie/TV Show",
+      "answer": "Two and a half men"
     },
     "5": {
-      "category": "Phrase",
-      "answer": "Early to bed, early to rise"
+      "category": "Movie/TV Show",
+      "answer": "How I met your mother"
     },
     "6": {
-      "category": "TV Show",
+      "category": "Movie/TV Show",
       "answer": "Stranger Things"
+    },
+    "7": {
+      "category": "Movie/TV Show",
+      "answer": "How to get away with murder"
+    },
+    "8": {
+      "category": "Movie/TV Show",
+      "answer": "How to get away with murder"
+    },
+    "9": {
+      "category": "Movie/TV Show",
+      "answer": "Titanic"
+    },
+    "10": {
+      "category": "Movie/TV Show",
+      "answer": "Passengers"
+    },
+    "11": {
+      "category": "Movie/TV Show",
+      "answer": "The hunger games: Mockingjay"
+    },
+    "12": {
+      "category": "Movie/TV Show",
+      "answer": "The maze runner"
+    },
+    "13": {
+      "category": "Movie/TV Show",
+      "answer": "Tomb raider"
+    },
+    "14": {
+      "category": "Movie/TV Show",
+      "answer": "The wolf of wall street"
+    },
+    "15": {
+      "category": "Movie/TV Show",
+      "answer": "Once upon a time in hollywood"
+    },
+    "16": {
+      "category": "Movie/TV Show",
+      "answer": "A good day to die hard"
+    },
+    "17": {
+      "category": "Movie/TV Show",
+      "answer": "the umbrella academy"
+    },
+    "18": {
+      "category": "Movie/TV Show",
+      "answer": "The vampire diaries"
+    },
+    "19": {
+      "category": "Movie/TV Show",
+      "answer": "The originals"
+    },
+    "20": {
+      "category": "Movie/TV Show",
+      "answer": "Kissing booth"
+    },
+    "21": {
+      "category": "Movie/TV Show",
+      "answer": "The secret life of pets"
+    },
+    "22": {
+      "category": "Movie/TV Show",
+      "answer": "Train to busan"
+    },
+    "23": {
+      "category": "Movie/TV Show",
+      "answer": "Attack on Titans"
+    },
+    "24": {
+      "category": "Movie/TV Show",
+      "answer": "Ready player one"
+    },
+    "25": {
+      "category": "Movie/TV Show",
+      "answer": "The lion king"
+    },
+    "26": {
+      "category": "Movie/TV Show",
+      "answer": "Pitch perfect"
+    },
+    "27": {
+      "category": "Movie/TV Show",
+      "answer": "Home alone"
+    },
+    "28": {
+      "category": "Movie/TV Show",
+      "answer": "here"
+    },
+    "29": {
+      "category": "Movie/TV Show",
+      "answer": "Motherless Brooklyn"
+    },
+    "30": {
+      "category": "Movie/TV Show",
+      "answer": "Motherless Brooklyn"
+    },
+    "31": {
+      "category": "Movie/TV Show",
+      "answer": "Peaky blinders"
+    },
+    "32": {
+      "category": "Movie/TV Show",
+      "answer": "Money heist"
+    },
+    "33": {
+      "category": "Movie/TV Show",
+      "answer": "Prison break"
+    },
+    "34": {
+      "category": "Movie/TV Show",
+      "answer": "Breaking bad"
+    },
+    "35": {
+      "category": "Movie/TV Show",
+      "answer": "Game of thrones"
+    },
+    "36": {
+      "category": "Movie/TV Show",
+      "answer": "Avatar The last airbender"
+    },
+    "37": {
+      "category": "Movie/TV Show",
+      "answer": "The legend of the seeker"
+    },
+    "38": {
+      "category": "Movie/TV Show",
+      "answer": "Lord of the rings"
+    },
+    "39": {
+      "category": "Movie/TV Show",
+      "answer": "Dr. Jekyll and Mr. Hyde"
+    },
+    "40": {
+      "category": "Movie/TV Show",
+      "answer": "Modern family"
+    },
+    "41": {
+      "category": "Movie/TV Show",
+      "answer": "The Matrix: Reloaded"
+    },
+    "42": {
+      "category": "Popular Phrase",
+      "answer": "If it ain't broke , don't fix it"
+    },
+    "43": {
+      "category": "Popular Phrase",
+      "answer": "Early to bed , Early to rise"
+    },
+    "44": {
+      "category": "Popular Phrase",
+      "answer": "The patient dog eats the fattest bone"
+    },
+    "45": {
+      "category": "Popular Phrase",
+      "answer": "An apple a day keeps the doctor away"
+    },
+    "46": {
+      "category": "Popular Phrase",
+      "answer": "A bird in the hand it worth two in the bush"
+    },
+    "47": {
+      "category": "Popular Phrase",
+      "answer": "Actions speak louder than words"
+    },
+    "48": {
+      "category": "Popular Phrase",
+      "answer": "Birds of a feather flock together"
+    },
+    "49": {
+      "category": "Popular Phrase",
+      "answer": "Don't put all your eggs in one basket"
+    },
+    "50": {
+      "category": "Popular Phrase",
+      "answer": "Do not count your chickens before they hatch"
+    },
+    "51": {
+      "category": "Popular Phrase",
+      "answer": "When life gives you lemons , make lemonades"
+    },
+    "52": {
+      "category": "Popular Phrase",
+      "answer": "Every cloud has a silver lining"
+    },
+    "53": {
+      "category": "Popular Phrase",
+      "answer": "One man's food is another man's poison"
+    },
+    "54": {
+      "category": "Popular Phrase",
+      "answer": "Slow and steady win the race"
+    },
+    "55": {
+      "category": "Popular Phrase",
+      "answer": "Kill two birds with one stone"
+    },
+    "56": {
+      "category": "Popular Phrase",
+      "answer": "There are other fishes in the sea"
+    },
+    "57": {
+      "category": "Popular Phrase",
+      "answer": "You can't judge a book by it's cover"
+    },
+    "58": {
+      "category": "Popular Phrase",
+      "answer": "With great power comes great responsibility"
+    },
+    "59": {
+      "category": "Popular Phrase",
+      "answer": "Hasta la vista, baby!"
+    },
+    "60": {
+      "category": "Popular Phrase",
+      "answer": "Keep your friends close, but your enemies closer"
+    },
+    "61": {
+      "category": "Popular Phrase",
+      "answer": "Wakanda forever"
+    },
+    "62": {
+      "category": "Popular Phrase",
+      "answer": "Wahala be like bicycle"
+    },
+    "63": {
+      "category": "Popular Phrase",
+      "answer": "There's no place like home"
+    },
+    "64": {
+      "category": "Popular Phrase",
+      "answer": "Winter is coming"
+    },
+    "65": {
+      "category": "Popular Phrase",
+      "answer": "For What is dead my never die"
+    },
+    "66": {
+      "category": "Popular Phrase",
+      "answer": "Fool me once , shame on you"
     }
-  },
-  "insultsObj": {
-    "1": "Why do I always get stuck with the idiots",
-    "2": "Now we know you made up the entire education section of your CV",
-    "3": "Ok, now you are just embarrassing yourself",
-    "4": "Please tell me you were trying to be funny"
   }
 }
