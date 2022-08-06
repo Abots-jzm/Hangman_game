@@ -298,7 +298,7 @@
     },
     "75": {
       "category": "Popular Phrase",
-      "answer": "I came, I say, I conquered"
+      "answer": "I came , I saw , I conquered"
     },
     "76": {
       "category": "Popular Phrase",
@@ -306,7 +306,7 @@
     },
     "77": {
       "category": "Popular Phrase",
-      "answer": "As you lay your bed, so you lie on it"
+      "answer": "As you lay your bed , so you lie on it"
     },
     "78": {
       "category": "Popular Phrase",
@@ -323,6 +323,126 @@
     "81": {
       "category": "Popular Phrase",
       "answer": "It's morbin time"
+    },
+    "82": {
+      "category": "Song title / artist",
+      "answer": "Sweater Weather / The neighborhood"
+    },
+    "83": {
+      "category": "Song title / artist",
+      "answer": "Dandelions / Ruth b"
+    },
+    "84": {
+      "category": "Song title / artist",
+      "answer": "Good form / Nicki minaj"
+    },
+    "85": {
+      "category": "Song title / artist",
+      "answer": "Uptown funk / Bruno mars"
+    },
+    "86": {
+      "category": "Song title / artist",
+      "answer": "Another love / Tom odell"
+    },
+    "87": {
+      "category": "Song title / artist",
+      "answer": "Cradles / Sub urban"
+    },
+    "88": {
+      "category": "Song title / artist",
+      "answer": "Sunflower / Post Malone"
+    },
+    "89": {
+      "category": "Song title / artist",
+      "answer": "Locked away / Bruno Mars"
+    },
+    "90": {
+      "category": "Song title / artist",
+      "answer": "Hello / Adele"
+    },
+    "91": {
+      "category": "Song title / artist",
+      "answer": "On the low / Burna boy"
+    },
+    "92": {
+      "category": "Song title / artist",
+      "answer": "Ozumba mbadiwe / Reekado banks"
+    },
+    "93": {
+      "category": "Song title / artist",
+      "answer": "Believer / Imagine dragons"
+    },
+    "94": {
+      "category": "Song title / artist",
+      "answer": "Sicko mode / Travis scott"
+    },
+    "95": {
+      "category": "Song title / artist",
+      "answer": "Young dumb and broke / khalid"
+    },
+    "96": {
+      "category": "Song title / artist",
+      "answer": "Valentine / Boss boi"
+    },
+    "97": {
+      "category": "Song title / artist",
+      "answer": "Certified loner / Mayorkun"
+    },
+    "98": {
+      "category": "Song title / artist",
+      "answer": "Machala / Carter efe"
+    },
+    "99": {
+      "category": "Song title / artist",
+      "answer": "All power / Victony"
+    },
+    "100": {
+      "category": "Song title / artist",
+      "answer": "Palazzo / Asake"
+    },
+    "101": {
+      "category": "Song title / artist",
+      "answer": "Last last / Burna boy"
+    },
+    "102": {
+      "category": "Song title / artist",
+      "answer": "Buga (lo lo lo) / Kizz daniel"
+    },
+    "103": {
+      "category": "Song title / artist",
+      "answer": "Peace be unto you / Asake"
+    },
+    "104": {
+      "category": "Song title / artist",
+      "answer": "Finesse / Pheelz"
+    },
+    "105": {
+      "category": "Song title / artist",
+      "answer": "Pour me water / Kizz daniel"
+    },
+    "106": {
+      "category": "Song title / artist",
+      "answer": "Girlfriend / Ruger"
+    },
+    "107": {
+      "category": "Song title / artist",
+      "answer": "Playboy / Fireboy"
+    },
+    "108": {
+      "category": "Song title / artist",
+      "answer": "Calm down / Rema"
+    },
+    "109": {
+      "category": "Song title / artist",
+      "answer": "Soundgasm / Rema"
+    },
+    "110": {
+      "category": "Song title / artist",
+      "answer": "Barnabas / kizz daniel"
+    },
+    "111": {
+      "category": "Song title / artist",
+      "answer": "Sweater Weather / The neighborhood"
     }
   }
 }
